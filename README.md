@@ -42,6 +42,8 @@ model | Params | Accuracy(0-99999)
 |---|---|---
 base.pt |13.66M | 99.9997% 
 
+注：本模型将silu激活函数换成[snakebeta](https://arxiv.org/abs/2006.08195)激活函数以更好地捕获周期特征，其余部分与llama2保持一致。
+
 ##  TODO
 
 本人对大语言模型了解不多，若有任何疑问或者优化方案，欢迎提issue或pr

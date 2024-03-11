@@ -1,5 +1,5 @@
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = '1,2'
+# os.environ["CUDA_VISIBLE_DEVICES"] = '0,1'
 
 from dataclasses import dataclass
 from typing import Tuple
