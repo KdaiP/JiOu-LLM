@@ -12,7 +12,7 @@
 ## 环境配置
 
 - `Python` >= 3.8
-- `Pytorch` >= 2.0
+- `Pytorch` >= 2.2
 
 其他依赖：tqdm（进度条）和gradio（webui）
 ```bash

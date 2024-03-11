@@ -6,7 +6,7 @@ from torch.utils.data import Dataset, DataLoader
 from tokenizer import LlamaTokenizer
 
 class LlamaDataset(Dataset):
-    def __init__(self, range_min=1, range_max=18, num_samples=100000000):
+    def __init__(self, range_min=1, range_max=10, num_samples=1000000):
         self.range_min = range_min
         self.range_max = range_max
         self.num_samples = num_samples
@@ -60,5 +60,5 @@ if __name__ ==  '__main__':
     dataloader = DataLoader(dataset, batch_size=64, collate_fn=collate_fn, shuffle=True)
 
     for data in dataloader:
-        print("Batch data shape:", data.shape)
+        print("Batch data shape:", data[0].shape)
         break  # 只打印第一批数据的形状
